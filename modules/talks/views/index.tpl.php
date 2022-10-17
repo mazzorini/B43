@@ -54,7 +54,7 @@ foreach ($messages as $i => $message)
 			echo implode(' ', $title);
 		?>
 		</h6>
-		<?php echo $message['message'] ? strtolink($message['message']) : '<i>'.$this->lang('Message supprimé').'</i>' ?>
+		<?php echo $message['message'] ? strtolink($message['message']) : '<i>'.$this->lang('Post deleted').'</i>' ?>
 	</div>
 <?php
 	$output = [$avatar, ob_get_clean()];
@@ -77,5 +77,5 @@ foreach ($messages as $i => $message)
 }
 ?>
 <?php if (!$count && empty($user_id) && empty($position)): ?>
-	<div class="text-center"><?php echo $this->lang('Aucun message dans la discussion') ?></div>
+	<div class="text-center"><?php echo $this->lang('No message in chat') ?></div>
 <?php endif ?>

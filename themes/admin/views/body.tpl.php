@@ -11,7 +11,7 @@
 			<div class="col-12 text-center">
 				<?php echo icon('far fa-bell fa-2x mb-2') ?>
 				<h6 class="mb-3">
-					Nouvelle mise à jour !<br />
+					New update!<br />
 					<small class="text-muted">NeoFrag <?php echo $update->version ?></small>
 				</h6>
 				<a href="#" class="btn btn-primary btn-block" data-modal-ajax="<?php echo url('admin/monitoring/update') ?>">Installer !</a>
@@ -39,9 +39,9 @@
 			<div class="collapse navbar-collapse" id="navbar_user">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a class="nav-link btn btn-link" href="<?php echo url('user') ?>"><?php echo $this->user->username ?></a></li>
-					<li class="nav-item"><a class="nav-link btn btn-link" href="<?php echo url('user/logout') ?>"><?php echo icon('fas fa-times') ?> Se déconnecter</a></li>
+					<li class="nav-item"><a class="nav-link btn btn-link" href="<?php echo url('user/logout') ?>"><?php echo icon('fas fa-times') ?> Sign out</a></li>
 					<li class="nav-item nav-item-separator d-none d-lg-block">/</li>
-					<li class="nav-item"><a class="nav-link btn btn-link" href="<?php echo url() ?>"><?php echo icon('fas fa-home') ?> Retourner sur le site</a></li>
+					<li class="nav-item"><a class="nav-link btn btn-link" href="<?php echo url() ?>"><?php echo icon('fas fa-home') ?> Return to the site</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -79,7 +79,7 @@
 			<div class="module module-admin module-error"><?php echo $error ?></div>
 		<?php endif ?>
 		<footer class="footer">
-			<span class="text-muted"><?php echo $this->lang('Propulsé par').' NeoFrag '.NEOFRAG_VERSION ?></span>
+			<span class="text-muted"><?php echo $this->lang('Powered by').' NeoFrag '.NEOFRAG_VERSION ?></span>
 			<ul class="mb-0 list-inline float-right">
 				<?php
 				foreach ([

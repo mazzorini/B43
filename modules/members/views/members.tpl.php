@@ -42,6 +42,6 @@
 </div>
 <?php else: ?>
 <div class="card border-info text-center">
-	<div class="card-body"><?php echo $this->lang('Il n\'y a pas encore de membre dans ce groupe') ?></div>
+	<div class="card-body"><?php echo $this->lang('There are no members in this group yet.') ?></div>
 </div>
 <?php endif ?>

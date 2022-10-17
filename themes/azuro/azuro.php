@@ -204,27 +204,27 @@ class Azuro extends Theme
 									'settings' => serialize([
 										'links'   => [
 											[
-												'title' => utf8_htmlentities($this->lang('Actualités')),
+												'title' => utf8_htmlentities($this->lang('News')),
 												'url'   => 'news'
 											],
 											[
-												'title' => utf8_htmlentities($this->lang('Membres')),
+												'title' => utf8_htmlentities($this->lang('Members')),
 												'url'   => 'members'
 											],
 											[
-												'title' => utf8_htmlentities($this->lang('Recrutement')),
+												'title' => utf8_htmlentities($this->lang('Recruitment')),
 												'url'   => 'recruits'
 											],
 											[
-												'title' => utf8_htmlentities($this->lang('Photos')),
+												'title' => utf8_htmlentities($this->lang('Pictures')),
 												'url'   => 'gallery'
 											],
 											[
-												'title' => utf8_htmlentities($this->lang('Événements')),
+												'title' => utf8_htmlentities($this->lang('Events')),
 												'url'   => 'events'
 											],
 											[
-												'title' => utf8_htmlentities($this->lang('Rechercher')),
+												'title' => utf8_htmlentities($this->lang('To research')),
 												'url'   => 'search'
 											],
 											[

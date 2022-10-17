@@ -12,7 +12,7 @@
 <?php else: ?>
 <div class="card border-info">
 	<div class="card-body">
-		<div class="text-center"><?php echo $this->lang('Aucune image dans cet album') ?></div>
+		<div class="text-center"><?php echo $this->lang('No images in this album') ?></div>
 	</div>
 </div>
 <?php endif ?>

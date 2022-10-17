@@ -7,7 +7,7 @@
 			<?php echo $this->groups->user_groups($user_id) ?>
 		</div>
 	<?php else: ?>
-		<h5><i><?php echo $this->lang('Visiteur') ?></i></h5>
+		<h5><i><?php echo $this->lang('Visitor') ?></i></h5>
 		<?php echo $this->module('user')->model2('user')->avatar() ?>
 	<?php endif ?>
 </div>

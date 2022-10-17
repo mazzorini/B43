@@ -1,7 +1,7 @@
 <div class="card-group">
 	<div class="card">
 		<div class="card-body">
-			<h5 class="card-title"><?php echo $this->lang('À propos de l\'auteur') ?></h5>
+			<h5 class="card-title"><?php echo $this->lang('About the Author') ?></h5>
 			<div class="media">
 				<?php echo $this->module('user')->model2('user', $user_id)->avatar() ?>
 				<div class="media-body">
@@ -15,7 +15,7 @@
 	</div>
 	<div class="card">
 		<div class="card-body">
-			<h5 class="card-title"><?php echo $this->lang('Autres actualités de l\'auteur') ?></h5>
+			<h5 class="card-title"><?php echo $this->lang('Other news from the author') ?></h5>
 			<?php if (!empty($news)): ?>
 			<ul class="list-unstyled">
 				<?php foreach ($news as $news): ?>

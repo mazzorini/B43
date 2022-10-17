@@ -25,7 +25,7 @@
 <?php else: ?>
 <div class="card border-info">
 	<div class="card-body">
-		<div class="text-center"><?php echo $category == NULL ? $this->lang('Aucun album') : $this->lang('Aucun album dans cette catégorie') ?></div>
+		<div class="text-center"><?php echo $category == NULL ? $this->lang('No albums') : $this->lang('No albums in this category') ?></div>
 	</div>
 </div>
 <?php endif ?>

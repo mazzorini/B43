@@ -2,8 +2,8 @@
 	<thead class="forum-heading">
 		<tr>
 			<th class="col-<?php echo $this->url->admin ? 6 : 7 ?>" colspan="2"><h5 class="m-0"><?php echo icon($this->url->admin ? 'fas fa-arrows-alt-v' : 'fas fa-bars').' '.$title ?></h5></th>
-			<th class="col-2"><h5 class="m-0"><?php echo icon('fas fa-signal') ?><span class="d-none d-sm-inline-block ml-1"><?php echo $this->lang('Statistiques') ?></span></h5></th>
-			<th class="col-3"><h5 class="m-0"><?php echo icon('far fa-comment') ?><span class="d-none d-sm-inline-block ml-1"><?php echo $this->lang('Dernier message') ?></span></h5></th>
+			<th class="col-2"><h5 class="m-0"><?php echo icon('fas fa-signal') ?><span class="d-none d-sm-inline-block ml-1"><?php echo $this->lang('Statistics') ?></span></h5></th>
+			<th class="col-3"><h5 class="m-0"><?php echo icon('far fa-comment') ?><span class="d-none d-sm-inline-block ml-1"><?php echo $this->lang('Last message') ?></span></h5></th>
 			<?php if ($this->url->admin): ?>
 			<th class="col-1 text-right">
 				<?php echo $this->button_access($category_id, 'category') ?>
@@ -52,7 +52,7 @@
 				<?php if (!$forum['url']): ?>
 				<?php if ($forum['last_title']): ?>
 					<div><a href="<?php echo url('forum/topic/'.$forum['topic_id'].'/'.url_title($forum['last_title']).($forum['last_count_messages'] > $this->config->forum_messages_per_page ? '/page/'.ceil($forum['last_count_messages'] / $this->config->forum_messages_per_page) : '').'#'.$forum['last_message_id']) ?>"><?php echo icon('far fa-comment').' '.str_shortener($forum['last_title'], 40) ?></a></div>
-					<div><small><?php echo icon('fas fa-user').' '.($forum['user_id'] ? $this->user->link($forum['user_id'], $forum['username']) : '<i>'.$this->lang('Visiteur').'</i>').' '.icon('far fa-clock').' '.time_span($forum['last_message_date']) ?></small></div>
+					<div><small><?php echo icon('fas fa-user').' '.($forum['user_id'] ? $this->user->link($forum['user_id'], $forum['username']) : '<i>'.$this->lang('Visitor').'</i>').' '.icon('far fa-clock').' '.time_span($forum['last_message_date']) ?></small></div>
 				<?php else: ?>
 					<?php echo $this->lang('Aucun message') ?>
 				<?php endif; endif ?>
@@ -67,7 +67,7 @@
 		<?php endforeach ?>
 		<?php if (empty($forums)): ?>
 		<tr>
-			<td colspan="<?php echo $this->url->admin ? 5 : 4 ?>"><div class="alert alert-info text-center mb-0"><?php echo $this->lang('Aucun forum') ?></div></td>
+			<td colspan="<?php echo $this->url->admin ? 5 : 4 ?>"><div class="alert alert-info text-center mb-0"><?php echo $this->lang('No forums') ?></div></td>
 		</tr>
 		<?php endif ?>
 	</tbody>

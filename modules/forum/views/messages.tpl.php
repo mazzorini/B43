@@ -18,13 +18,13 @@
 			<td class="col-9">
 				<div class="actions float-right">
 				<?php if (($this->user() && $this->user->id == $message['user_id']) || $this->access('forum', 'category_modify', $category_id)): ?>
-					<a href="<?php echo url('forum/message/edit/'.$message['message_id'].'/'.url_title($title)) ?>" class="btn btn-sm btn-primary" data-toggle="tooltip" title="<?php echo $this->lang('Editer') ?>"><?php echo icon('fas fa-edit') ?></a>
-					<a href="<?php echo url('forum/message/delete/'.$message['message_id'].'/'.url_title($title)) ?>" class="btn btn-sm btn-primary delete" data-toggle="tooltip" title="<?php echo $this->lang('Supprimer') ?>"><?php echo icon('fas fa-times') ?></a>
+					<a href="<?php echo url('forum/message/edit/'.$message['message_id'].'/'.url_title($title)) ?>" class="btn btn-sm btn-primary" data-toggle="tooltip" title="<?php echo $this->lang('Edit') ?>"><?php echo icon('fas fa-edit') ?></a>
+					<a href="<?php echo url('forum/message/delete/'.$message['message_id'].'/'.url_title($title)) ?>" class="btn btn-sm btn-primary delete" data-toggle="tooltip" title="<?php echo $this->lang('To delete') ?>"><?php echo icon('fas fa-times') ?></a>
 				<?php endif ?>
 				</div>
-				<a name="<?php echo $message['message_id'] ?>"></a><?php echo icon('far fa-clock').' '.time_span($message['date']).' '.($last_message_read && $message['date'] <= $last_message_read ? icon('far fa-comment').' '.$this->lang('Message lu') : icon('fas fa-comment').' '.$this->lang('Message non lu')) ?>
+				<a name="<?php echo $message['message_id'] ?>"></a><?php echo icon('far fa-clock').' '.time_span($message['date']).' '.($last_message_read && $message['date'] <= $last_message_read ? icon('far fa-comment').' '.$this->lang('Message read') : icon('fas fa-comment').' '.$this->lang('Unread message')) ?>
 				<hr />
-				<?php echo $message['message'] !== NULL ? bbcode($message['message']) : $this->lang('<i>Message supprimé</i>') ?>
+				<?php echo $message['message'] !== NULL ? bbcode($message['message']) : $this->lang('<i>Post deleted</i>') ?>
 				<?php if (!empty($profile['signature'])): ?>
 				<hr />
 				<?php echo bbcode($profile['signature']) ?>
