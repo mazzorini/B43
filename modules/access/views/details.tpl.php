@@ -1,12 +1,12 @@
 <table class="table table-access table-hover">
 	<thead>
 		<tr>
-			<th class="col-6 col-lg-7"><?php echo $this->lang('Groupes') ?></th>
+			<th class="col-6 col-lg-7"><?php echo $this->lang('Groups') ?></th>
 			<th class="col-1 text-center" data-radio="success">
-				<div data-toggle="tooltip" title="<?php echo $this->lang('Groupe autorisé') ?>"><?php echo icon('fas fa-check') ?></div>
+				<div data-toggle="tooltip" title="<?php echo $this->lang('Authorized group') ?>"><?php echo icon('fas fa-check') ?></div>
 			</th>
 			<th class="col-1 text-center" data-radio="danger">
-				<div data-toggle="tooltip" title="<?php echo $this->lang('Groupe exclu') ?>"><?php echo icon('fas fa-ban') ?></div>
+				<div data-toggle="tooltip" title="<?php echo $this->lang('Excluded group') ?>"><?php echo icon('fas fa-ban') ?></div>
 			</th>
 		</tr>
 	</thead>

@@ -3,7 +3,7 @@
 <?php endif ?>
 <div class="card-body">
 	<div class="text-center mb-5">
-		<h5>Classement de l'équipe <a href="<?php echo url('awards/team/'.$team_id.'/'.$team_name) ?>"><b><?php echo $team_title ?></b></a></h5>
+		<h5>Team Ranking <a href="<?php echo url('awards/team/'.$team_id.'/'.$team_name) ?>"><b><?php echo $team_title ?></b></a></h5>
 		<?php if ($ranking == 1): ?>
 			<h1 class="m-0"><?php echo icon('fas fa-trophy trophy-gold fa-3x') ?></h1>
 			<big><b><?php echo $ranking ?>er</b> sur <?php echo $participants.($participants > 1 ? ' équipes' : ' équipe') ?></big>

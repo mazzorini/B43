@@ -28,7 +28,7 @@
 			<th></th>
 			<th><span data-toggle="tooltip" title="Classement"><?php echo icon('fas fa-trophy') ?></span></th>
 			<th><span data-toggle="tooltip" title="Plateforme"><?php echo icon('fas fa-tv') ?></span></th>
-			<th colspan="2">Événement</th>
+			<th colspan="2">Event</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -72,7 +72,7 @@
 		else:
 		?>
 		<tr>
-			<td colspan="4">Aucun trophée...</td>
+			<td colspan="4">No trophies...</td>
 		</tr>
 		<?php endif ?>
 	</tbody>
